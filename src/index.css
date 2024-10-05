@@ -1,0 +1,32 @@
+*{
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  background-color: transparent;
+
+}
+
+body{
+
+  overflow: hidden;
+  overflow-y:scroll ;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.dark-mode{
+  background-color: black;
+  color: white;
+  transition:0.3s;
+}
+
+.loght-mode{
+  background-color:bisque;
+  color: black;
+  transition: 0.2s;
+}

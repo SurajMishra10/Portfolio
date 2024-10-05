@@ -1,0 +1,19 @@
+#about{
+    width: calc(100vw-4rem);
+    max-width: 75rem;
+    margin: 6rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#about h1{
+    text-decoration: underline;
+}
+
+.aboutDec{
+    flex-wrap: wrap;
+    font-size: 1.3rem;
+    font-weight: 300;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

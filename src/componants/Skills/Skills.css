@@ -1,0 +1,40 @@
+#skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+ .head {
+  margin-left: -70rem;
+  padding: 1rem;
+}
+
+.FrontEndImg {
+  padding: 0.5rem;
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+
+.skillBg {
+  background-color: white;
+  border: 0.1rem solid black;
+  margin: 1rem;
+  padding: 0.5rem;
+  width: 10vw;
+  aspect-ratio: 3/3;
+  object-fit: contain;
+  box-shadow: 1px 3px 5px gray;
+  
+}
+
+@media screen and (max-width:720px) {
+  .skillBg{
+    margin: 0.6rem;
+    padding: 0.2rem;
+  }
+  
+}
