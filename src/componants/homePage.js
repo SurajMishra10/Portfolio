@@ -21,7 +21,7 @@ function Home() {
         </button>
       </div>
       
-        <img src={bg} className="bg" />
+        <img src={bg} alt="profile picture" className="bg" />
       
     </section>
   );
