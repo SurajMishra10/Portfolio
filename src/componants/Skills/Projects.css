@@ -1,0 +1,26 @@
+#project {
+    min-height: calc(100vh-4rem);
+    width: 100vw;
+    max-width: 60rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.project-container{
+    display: flex;
+}
+
+.pro-box {
+    width: 200px;
+    height: 300px;
+    background-color: bisque;
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

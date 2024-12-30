@@ -1,11 +1,15 @@
 #home {
   height: calc(100vh-4rem);
-  width:100vw;
+  width: 100vw;
   max-width: 75rem;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .left {
   height: 100vh;
   width: 100vw;
@@ -16,27 +20,32 @@
   flex-direction: column;
   justify-content: center;
 }
-.bg {
-  position: absolute;
-  top: 3rem;
-  right: 0;
-  z-index: -1;
-  object-fit: cover;
-  height: 100vh;
-  
-}
-.hello{
+
+.hello {
   font-size: 1.75rem;
   font-weight: 100;
 }
 
-.introName{
+.introName {
   color: green;
 }
-.introPara{
+
+.introPara {
   font-size: medium;
   font-weight: 100;
 }
+
+.animated-text {
+  font-size: 34px;
+  font-weight: 600;
+  min-width: 280px;
+}
+
+.animated-text span {
+  position: relative;
+  color: orangered;
+}
+
 
 #home button {
   width: 150px;
@@ -44,7 +53,7 @@
   margin-top: 30px;
   background-color: rgb(6, 6, 105);
   border-radius: 5px;
-  box-shadow: 3px 3px 10px  gray;
+  box-shadow: 3px 3px 10px gray;
   border: none;
   outline: none;
 }
@@ -55,21 +64,35 @@
   color: white;
 }
 
-@media screen and (max-width:840px){
-  .bg{
-    right: -10vw;
-  }
-  .left{
+@media screen and (max-width:840px) {
+
+  .left {
     font-size: 10vw;
   }
-  .hello{
+
+  .hello {
     font-size: 4.5vw;
+  }
+  .animated-text {
+    font-size: 20px;
+    font-weight: 600;
+    min-width: 280px;
+  }
+  #home button {
+    width: 80%;
+    height: 30px;
+    margin-top: 30px;
+    background-color: rgb(6, 6, 105);
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px gray;
+    border: none;
+    outline: none;
   }
 }
 
-@media screen and (max-width:480px){
-  .bg{
+@media screen and (max-width:480px) {
+  .bg {
     right: -20vw;
   }
-  
+
 }

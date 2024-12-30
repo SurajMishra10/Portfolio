@@ -1,40 +1,79 @@
 #skill {
+  min-height: calc(100vh-4rem);
+  width: 100vw;
+  max-width: 60rem;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  text-align: center;
   align-items: center;
 }
 
- .head {
-  margin-left: -70rem;
-  padding: 1rem;
+.skill-container {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.FrontEndImg {
-  padding: 0.5rem;
-  width: 40vw;
+.box {
+  margin: 1.5rem;
+  width: 10rem;
+  height: 10rem;
+  border: 0.2rem solid gray;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(71, 70, 70);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box hr {
+  height: 5px;
+  background-color: gray;
+  margin-top: 5px;
+}
+
+.box img {
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+  height: max-content;
+  padding-left: 20px;
+}
+
+.box .title {
+  margin-top: 10px;
+  padding-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 0.5rem;
-}
-
-.skillBg {
-  background-color: white;
-  border: 0.1rem solid black;
-  margin: 1rem;
-  padding: 0.5rem;
-  width: 10vw;
-  aspect-ratio: 3/3;
-  object-fit: contain;
-  box-shadow: 1px 3px 5px gray;
   
 }
 
 @media screen and (max-width:720px) {
-  .skillBg{
+  .skill{
     margin: 0.6rem;
     padding: 0.2rem;
+    display: flex;
+    justify-content: center;
+  }
+  .skill-container{
+    margin-left: 10%;
+  }
+  .box{
+    width: 5rem;
+    height: 5rem;
+    font-size: small;
+    margin: 5px;
+  }
+  .box img {
+    width: 50px;
+    margin: 5px;
+  }
+  .box .title {
+    font-size: 10px;
   }
   
+
 }

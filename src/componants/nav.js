@@ -31,11 +31,11 @@ function Nav() {
         <Link activeClass="active" to="Form" spy={true} smooth={true} offset={-100} duration={500} className="list" >Contact</Link>
         </div>
 
-        <div className="icon" onClick={change}>{state == "light-mode" ? (<i class="fa-solid fa-moon"></i>) : (<i class="fa-solid fa-sun"></i>)}
+        <div className="icon" onClick={change}>{state == "light-mode" ? (<i className="fa-solid fa-moon"></i>) : (<i className="fa-solid fa-sun"></i>)}
         </div>
 
         <div className="mobMenu" onClick={()=>setShowMenu(!showMenu)}>
-        <i class="fa-solid fa-bars" ></i>
+        <i className="fa-solid fa-bars" ></i>
         </div>
         <div className="navMenu" style={{display: showMenu? 'flex':"none"}}>
         <Link activeClass="active" to="home" spy={true} smooth={true} offset={-100} duration={500}className="listItem" onClick={()=>setShowMenu(false)}>Home</Link>
